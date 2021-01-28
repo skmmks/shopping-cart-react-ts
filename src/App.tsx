@@ -26,6 +26,10 @@ const getProducts = async (): Promise<CartItemType[]> => {
 const App = () => {
   const { data, isLoading, error } = useQuery<CartItemType[]>('products', getProducts);
 
+  const getTotalItems = () => null;
+  const handleAddToCart = () => null;
+  const handleRemoveFromCart = () => null;
+
   return <div className='App'>Start</div>;
 };
 
