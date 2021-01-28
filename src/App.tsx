@@ -30,6 +30,9 @@ const App = () => {
   const handleAddToCart = () => null;
   const handleRemoveFromCart = () => null;
 
+  if (isLoading) return <LinearProgress />;
+  if (error) return <div>There is an error...</div>;
+
   return <div className='App'>Start</div>;
 };
 
