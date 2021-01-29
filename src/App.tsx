@@ -27,7 +27,7 @@ const App = () => {
   const { data, isLoading, error } = useQuery<CartItemType[]>('products', getProducts);
 
   const getTotalItems = () => null;
-  const handleAddToCart = () => null;
+  const handleAddToCart = (clickedItem: CartItemType) => null;
   const handleRemoveFromCart = () => null;
 
   if (isLoading) return <LinearProgress />;
