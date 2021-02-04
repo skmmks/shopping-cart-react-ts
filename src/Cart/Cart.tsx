@@ -7,3 +7,11 @@ type Props = {
   addToCart: (clickedItem: CartItemType) => void;
   removeFromCart: (id: number) => void;
 };
+
+const Cart: React.FC<Props> = ({ cartItems, addToCart, removeFromCart }) => {
+  return (
+    <Wrapper>
+      <h2>Your Shopping Cart</h2>
+    </Wrapper>
+  );
+};
