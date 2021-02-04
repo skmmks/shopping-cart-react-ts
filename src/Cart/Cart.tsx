@@ -19,3 +19,5 @@ const Cart: React.FC<Props> = ({ cartItems, addToCart, removeFromCart }) => {
     </Wrapper>
   );
 };
+
+export default Cart;
