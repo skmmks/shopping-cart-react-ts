@@ -39,6 +39,8 @@ const App = () => {
       if (isItemInCart) {
         return prev.map((item) => (item.id === clickedItem.id ? { ...item, amount: item.amount + 1 } : item));
       }
+
+      return [...prev, { ...clickedItem, amount: 1 }];
     });
   };
   const handleRemoveFromCart = () => null;
