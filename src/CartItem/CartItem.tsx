@@ -16,7 +16,12 @@ const CartItem: React.FC<Props> = ({ item, addToCart, removeFromCart }) => (
       <h3>{item.title}</h3>
       <div>
         <p>Price: ${item.price}</p>
-        <p>Total: ${(item.amount * item.price)}</p>
+        <p>Total: ${(item.amount * item.price).toFixed(2)}</p>
+      </div>
+      <div>
+        <Button size='small' disableElevation variant='contained' onClick={() => removeFromCart(item.id)}>
+          -
+        </Button>
       </div>
     </div>
     ;
