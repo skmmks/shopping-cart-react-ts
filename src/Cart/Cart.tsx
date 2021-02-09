@@ -19,6 +19,7 @@ const Cart: React.FC<Props> = ({ cartItems, addToCart, removeFromCart }) => {
       {cartItems.map((item) => (
         <CartItem key={item.id} item={item} addToCart={addToCart} removeFromCart={removeFromCart} />
       ))}
+      <h2>Total: ${calculateTotal(cartItems).toFixed(2)}</h2>
     </Wrapper>
   );
 };
